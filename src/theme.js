@@ -1,6 +1,36 @@
 export default {
   // colors
+  PRIMARY_COLOR: '#F9DBBD',
+  SECONDARY_COLOR: '#DA627D',
+  SECONDARY_COLOR2: '#FFA5AB',
+  SECONDARY_COLOR3: '#A63860',
+  WHITE: '#FFF',
+  BLACK: '#000',
+  BACKGROUND_COLOR: '#fdfdff',
+
   // fonts
+  FONT_SIZE_XS: 12,
+  FONT_SIZE_S: 14,
+  FONT_SIZE_M: 16,
+  FONT_SIZE_L: 18,
+  FONT_SIZE_XL: 20,
+
+  FONT_WEIGHT_S: '300',
+  FONT_WEIGHT_M: '600',
+  FONT_WEIGHT_L: '900',
+
   // padding
+  PADDING_XS: 6,
+  PADDING_S: 12,
+  PADDING_M: 18,
+  PADDING_L: 24,
+  PADDING_XL: 32,
+  CONTENT_PADDING: 16,
   // margin
+  MARGIN_XS: 6,
+  MARGIN_S: 12,
+  MARGIN_M: 18,
+  MARGIN_L: 24,
+  MARGIN_XL: 32,
+  // General
 };

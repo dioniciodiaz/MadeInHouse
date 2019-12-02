@@ -9,7 +9,7 @@ const Home = props => {
         <View>
           <Text>hi</Text>
         </View>
-        <Button onPress={() => props.navigation.navigate('ViewRecipe')}>
+        <Button onPress={() => props.navigation.push('ViewRecipes')}>
           <Text>GO to Recipe</Text>
         </Button>
       </Content>

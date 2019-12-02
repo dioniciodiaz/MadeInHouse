@@ -1,15 +1,17 @@
-export const recipes = {
+const recipes = {
   state: {
     recipes: [],
     isLoading: true,
     error: null,
   },
   reducers: {
-    setRecipes(state, payload) => {...state, recipes: payload},
+    setRecipes: (state, payload) => ({...state, recipes: payload}),
   },
   effects: dispatch => ({
-    async fetchRecipes(payload, getState) => {
-      console.log("hi")
-    }
-  })
-}
+    fetchRecipes: async (payload, getState) => {
+      console.log('hi');
+    },
+  }),
+};
+
+export default recipes;

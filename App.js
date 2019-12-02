@@ -1,27 +1,23 @@
 import React from 'react';
+import 'react-native-gesture-handler';
+import {enableScreens} from 'react-native-screens';
 import {NavigationNativeContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
 import {ThemeProvider} from 'styled-components';
 import {Provider} from 'react-redux';
-import * as screen from './src/screens';
 import store from './src/store';
 import theme from './src/theme';
+import {AppTab} from './src/config/tabs';
 
-const Stack = createStackNavigator();
+enableScreens();
+
 export default function App() {
   return (
     <Provider store={store}>
-      <NavigationNativeContainer>
-        <ThemeProvider theme={theme}>
-          <Stack.Navigator
-            initialRouteName="Home"
-            headerMode="screen"
-            screenOptions={{}}>
-            <Stack.Screen name="Home" component={screen.Home} />
-            <Stack.Screen name="ViewRecipe" component={screen.ViewRecipes} />
-          </Stack.Navigator>
-        </ThemeProvider>
-      </NavigationNativeContainer>
+      <ThemeProvider theme={theme}>
+        <NavigationNativeContainer>
+          <AppTab />
+        </NavigationNativeContainer>
+      </ThemeProvider>
     </Provider>
   );
 }
